@@ -1,5 +1,7 @@
 import { Movies } from "./movies.js";
 import { PersistanceManager } from "./persistanceManager.js";
+import { loadAllFonts } from "./loadFonts.js";
+
 const containerElement = document.getElementById("content-container");
 const overlay = document.getElementById("overlay");
 const modal = document.getElementById("rating-modal");
@@ -10,6 +12,8 @@ const modalHeading = document.getElementById("modal-heading");
 const deleteRating = document.getElementById("delete-rating");
 const ratingElement = document.getElementById("rating");
 const commentInput = document.getElementById("comment");
+
+loadAllFonts();
 
 const storageManager = new PersistanceManager();
 

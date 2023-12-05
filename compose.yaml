@@ -1,5 +1,7 @@
 services:
   server:
+    platform: linux/amd64 
+    restart: always 
     build:
       context: .
     environment:

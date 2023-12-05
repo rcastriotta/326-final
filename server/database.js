@@ -30,7 +30,7 @@ const reviewSchema = new mongoose.Schema({
     required: true,
     validate: {
       validator: function (v) {
-        return /^([1-5])$/.test(v);
+        return /^(10|[1-9])$/.test(v);
       },
       message: (props) => `${props.value} is not a valid rating!`,
     },

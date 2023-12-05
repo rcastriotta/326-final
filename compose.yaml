@@ -4,6 +4,7 @@ services:
     restart: always 
     build:
       context: .
+    image: rcastriotta/326-final
     environment:
       NODE_ENV: production
       PORT: 3000
